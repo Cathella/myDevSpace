@@ -19,6 +19,17 @@
     <p class="alert"><%= alert %></p>
 
     <div class="container">
+      <nav class="mb-5 nav">
+        <%=link_to "Home", root_path, class: "nav-link" %>
+        <% if user_signed_in? %>
+          <%=link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link" %>
+        <% end %>
+      </nav>
+      
+      <% if user_signed_in? %>
+        <p class="text-muted">Welcome Dev, relax and feel at home!</p>
+      <% end %>
+
       <%= yield %>
     </div>
   </body>

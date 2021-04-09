@@ -1,21 +1,12 @@
-<h1>My Bugs</h1>
+<h1 class="mb-4">My Bugs</h1>
 
-<table>
+<% @bugs.each do |bug| %>
+  <%= link_to bug.title, bug %>
 
-  <tbody>
-    <% @bugs.each do |bug| %>
-      <tr>
-        <td><%= bug.user_id %></td>
-        <td><%= bug.title %></td>
-        <td><%= bug.body %></td>
-        <td><%= link_to 'Show', bug %></td>
-        <td><%= link_to 'Edit', edit_bug_path(bug) %></td>
-        <td><%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <!--<%= link_to 'Edit', edit_bug_path(bug) %>
+  <%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->   
+<% end %>
 
-<br>
-
-<%= link_to 'Add a creepy Bug', new_bug_path %>
+<div class="mt-4">
+  <%= link_to 'Add a creepy Bug', new_bug_path, class: 'btn btn-info shadow' %>
+</div>

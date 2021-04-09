@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p> -->
+<div class="mb-4">
+  <%= link_to 'Back to bugs', bugs_path %>
+</div>
 
-<p>
-  <strong>User:</strong>
-  <%= @bug.user_id %>
-</p>
-
-<p>
-  <strong>Title:</strong>
+<h5>
   <%= @bug.title %>
-</p>
+</h5>
 
-<p>
-  <strong>Body:</strong>
+<small class="mt-3">
+  <strong>Posted by:</strong>
+  <%= @bug.user.email %>
+</small>
+
+<div class="bg-light p-3 rounded mt-4">
   <%= @bug.body %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_bug_path(@bug) %> |
-<%= link_to 'Back', bugs_path %>
+<div class="mt-3">
+  <%= link_to 'Edit bug post', edit_bug_path(@bug) %>
+</div>
