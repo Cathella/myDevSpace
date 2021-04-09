@@ -1,0 +1,30 @@
+<%= form_with(model: link) do |form| %>
+  <% if link.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% link.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field mb-3">
+    <%= form.label :title %>
+    <%= form.text_field :title, class: 'form-control'%>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :describe %>
+    <%= form.text_area :describe, class: 'form-control'%>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :source %>
+    <%= form.text_field :source, class: 'form-control'%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit Link', class: 'btn btn-info shadow mb-4' %>
+  </div>
+<% end %>

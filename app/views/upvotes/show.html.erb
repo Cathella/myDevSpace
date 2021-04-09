@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Solution:</strong>
+  <%= @upvote.solution_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @upvote.user_id %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @upvote.score %>
+</p>
+
+<%= link_to 'Edit', edit_upvote_path(@upvote) %> |
+<%= link_to 'Back', upvotes_path %>
