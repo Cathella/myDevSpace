@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @link.user_id %>
-</p>
+<div class="mb-4">
+  <%= link_to 'Back to links', links_path %>
+</div>
 
-<p>
-  <strong>Title:</strong>
+<h5>
   <%= @link.title %>
-</p>
+</h5>
 
-<p>
-  <strong>Describe:</strong>
-  <%= @link.describe %>
-</p>
+<small>
+  <strong>Posted by:</strong>
+  <%= @link.user.email %>
+</small>
 
-<p>
-  <strong>Source:</strong>
-  <%= @link.source %>
-</p>
+<div class="bg-light p-3 mt-4 mb-4">
+  <div<%= @link.describe %></div>
 
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', links_path %>
+  <p>
+  <strong>Source:</strong><br>
+  <%= link_to @link.source, {}, class: "text-info" %>
+  </p>
+</div>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %>

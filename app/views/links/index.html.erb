@@ -1,24 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Links</h1>
+<h1 class="mb-4">Important Links</h1>
 
-<table>
-
-  <tbody>
-    <% @links.each do |link| %>
-      <tr>
-        <td><%= link.user_id %></td>
-        <td><%= link.title %></td>
-        <td><%= link.describe %></td>
-        <td><%= link.source %></td>
-        <td><%= link_to 'Show', link %></td>
-        <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<% @links.each do |link| %>
+  <div class="border-bottom pb-3 mb-5">
+  <%= link_to link.title, link %><br>
+  <%= link.source %>
+  </div>
+  
+  <!--
+  <%= link_to 'Edit', edit_link_path(link) %>
+  <%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %>
+  -->
+<% end %>
 
 <%= link_to 'New Link', new_link_path %>
