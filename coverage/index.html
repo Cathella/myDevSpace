@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-09T11:58:54+03:00">2021-04-09T11:58:54+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-09T13:16:41+03:00">2021-04-09T13:16:41+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  97.98%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.01
+       <span class="red">
+         0.99
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>97</b> relevant lines,
+    <b>99</b> relevant lines,
     <span class="green"><b>97</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <span class="red"><b>2</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  97.98%
 </span>
 )
   </div>
@@ -150,9 +150,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#4454cce6be8ef84d7e7676c5b1e0decc1ede3b63" class="src_link" title="app/models/bug.rb">app/models/bug.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -380,12 +380,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c6cc4168ace511f45e1f6df637ea6cff26c7b881" class="src_link" title="spec/models/bug_spec.rb">spec/models/bug_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="red strong cell--number t-file__coverage">50.00 %</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0.50</td>
             
           </tr>
         
@@ -802,8 +802,8 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -848,7 +848,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validate_presence_of :title</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -7427,8 +7438,8 @@
   <div class="header">
     <h3>spec/models/bug_spec.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  50.0%
 </span>
 
       lines covered
@@ -7437,9 +7448,9 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>4</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -7483,18 +7494,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
             
 
             
 
-            <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+            <code class="ruby">  describe &#39;#title&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">    it { is_expected.to validate_presence_of(:title) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
