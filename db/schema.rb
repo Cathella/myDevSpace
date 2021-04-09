@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_09_085329) do
+ActiveRecord::Schema.define(version: 2021_04_09_124705) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,16 @@ ActiveRecord::Schema.define(version: 2021_04_09_085329) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["solution_id"], name: "index_comments_on_solution_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "links", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "title"
+    t.text "describe"
+    t.string "source"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_links_on_user_id"
   end
 
   create_table "solutions", force: :cascade do |t|
@@ -70,6 +80,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_085329) do
   add_foreign_key "bugs", "users"
   add_foreign_key "comments", "solutions"
   add_foreign_key "comments", "users"
+  add_foreign_key "links", "users"
   add_foreign_key "solutions", "bugs"
   add_foreign_key "solutions", "users"
   add_foreign_key "upvotes", "solutions"
