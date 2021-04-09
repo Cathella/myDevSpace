@@ -1,16 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Bugs</h1>
+<h1>My Bugs</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
   <tbody>
     <% @bugs.each do |bug| %>
@@ -28,4 +18,4 @@
 
 <br>
 
-<%= link_to 'New Bug', new_bug_path %>
+<%= link_to 'Add a creepy Bug', new_bug_path %>

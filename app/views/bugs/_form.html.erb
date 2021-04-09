@@ -1,8 +1,6 @@
 <%= form_with(model: bug) do |form| %>
   <% if bug.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(bug.errors.count, "error") %> prohibited this bug from being saved:</h2>
-
       <ul>
         <% bug.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -11,22 +9,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+    <%= form.text_field :user_id, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, class: 'form-control' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions mb-3">
+    <%= form.submit 'Submit Bug', class: 'btn btn-info shadow' %>
   </div>
 <% end %>
