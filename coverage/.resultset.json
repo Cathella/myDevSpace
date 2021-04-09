@@ -1,98 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/nakitto/odin_on_rails/myDevSpace/spec/helpers/home_helper_spec.rb": {
+      "/home/nakitto/odin_on_rails/myDevSpace/spec/models/bug_spec.rb": {
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
-          1,
-          null
-        ]
-      },
-      "/home/nakitto/odin_on_rails/myDevSpace/spec/rails_helper.rb": {
-        "lines": [
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          0,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          2,
-          2,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
           1,
           null
         ]
@@ -649,9 +562,58 @@
           null
         ]
       },
+      "/home/nakitto/odin_on_rails/myDevSpace/spec/factories/bugs.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/nakitto/odin_on_rails/myDevSpace/spec/factories/comments.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/nakitto/odin_on_rails/myDevSpace/spec/factories/solutions.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/nakitto/odin_on_rails/myDevSpace/spec/factories/upvotes.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/home/nakitto/odin_on_rails/myDevSpace/config/routes.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
           1,
           1,
           1,
@@ -681,60 +643,45 @@
           null
         ]
       },
+      "/home/nakitto/odin_on_rails/myDevSpace/app/helpers/bugs_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/nakitto/odin_on_rails/myDevSpace/app/helpers/comments_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/nakitto/odin_on_rails/myDevSpace/app/helpers/home_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/nakitto/odin_on_rails/myDevSpace/spec/models/user_spec.rb": {
+      "/home/nakitto/odin_on_rails/myDevSpace/app/helpers/solutions_helper.rb": {
         "lines": [
-          1,
-          null,
-          1,
           1,
           null
         ]
       },
-      "/home/nakitto/odin_on_rails/myDevSpace/spec/requests/home_spec.rb": {
+      "/home/nakitto/odin_on_rails/myDevSpace/app/helpers/upvotes_helper.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/nakitto/odin_on_rails/myDevSpace/spec/views/home/index.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
           1,
           null
         ]
       },
-      "/home/nakitto/odin_on_rails/myDevSpace/app/controllers/home_controller.rb": {
+      "/home/nakitto/odin_on_rails/myDevSpace/app/models/bug.rb": {
         "lines": [
           1,
           1,
-          null,
-          null
-        ]
-      },
-      "/home/nakitto/odin_on_rails/myDevSpace/app/controllers/application_controller.rb": {
-        "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1617951744
+    "timestamp": 1617958734
   }
 }
