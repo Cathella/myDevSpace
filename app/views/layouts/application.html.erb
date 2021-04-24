@@ -15,14 +15,15 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
 
     <div class="container">
-      <nav class="mb-5 nav">
-        <%=link_to "Home", root_path, class: "nav-link" %>
+      <nav class="mb-5 nav border-bottom py-3">
+        <%=link_to "Home", root_path, class: "no-decoration text-muted" %>
         <% if user_signed_in? %>
-          <%=link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link" %>
+          <%=link_to "Logout", destroy_user_session_path, method: :delete, class: "text-muted no-decoration ms-auto" %>
         <% end %>
       </nav>
       
