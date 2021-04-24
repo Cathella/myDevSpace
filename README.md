@@ -1,24 +1,3 @@
-# README
+# MyDevspace.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> I am creating this app to speed up my productivity, by saving all the errors that I come across during my development hours and how I managed to solve them in my personalized database. This saves my googling and StackOverflow-time.
