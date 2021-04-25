@@ -4,23 +4,21 @@
   <%= link_to 'Back to links', links_path %>
 </div>
 
-<h5>
+<h5 class="fw-bold fs-5 text-capitalize">
   <%= @link.title %>
 </h5>
 
-<small>
-  <strong>Posted by:</strong>
-  <%= @link.user.email %>
-</small>
+<p class="text-muted">
+  <%= @link.describe %>
+</p>
 
 <div class="bg-light p-3 mt-4 mb-4">
   <div<%= @link.describe %></div>
-
-  <p>
-  <strong>Source:</strong><br>
-  <%= link_to @link.source, {}, class: "text-info" %>
-  </p>
+  <div>
+    <strong>Source:</strong><br>
+    <%= link_to @link.source, {}, class: "text-info" %>
+  </div>
 </div>
 
 
-<%= link_to 'Edit', edit_link_path(@link) %>
+<%= link_to 'Edit', edit_link_path(@link) if user_signed_in? %>
